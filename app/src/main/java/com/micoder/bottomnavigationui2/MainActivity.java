@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
         chipNavigationBar = findViewById(R.id.bottom_nav_menu);
 
+        //default select item
+        //chipNavigationBar.setItemSelected(R.id.bottom_nav_menu,true);
+
+        //defalut fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
 
         bottomMenu();
